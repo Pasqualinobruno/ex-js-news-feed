@@ -1,0 +1,25 @@
+body{
+    background: #023047;
+}
+.container{
+    max-width: 60%;
+}
+.cards{
+    position: relative;
+}
+#select-tag{
+    position: absolute;
+    top: 12px;
+    right: 14px;
+}
+#select-tag:hover{
+    font-weight: 900;
+}
+#btn-news{
+    border-radius: 50%;
+    padding: 5px;
+}
+.btn-orange{
+    background-color: orange;
+    color: white;
+}
