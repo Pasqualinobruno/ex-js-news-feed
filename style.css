@@ -7,12 +7,12 @@ body{
 .cards{
     position: relative;
 }
-#select-tag{
+i{
     position: absolute;
     top: 12px;
     right: 14px;
 }
-#select-tag:hover{
+i:hover{
     font-weight: 900;
 }
 #btn-news{
