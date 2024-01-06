@@ -120,7 +120,7 @@ function creatArticles(articlelist, domEl) {
             } else {
                 saveEl.classList.add('fa-regular');
                 saveEl.classList.remove('fa-solid');
-                preferArticles = []
+                
               
             }
 
@@ -159,6 +159,8 @@ function creatArticles(articlelist, domEl) {
 
 const preferArticles = [];
 console.log(preferArticles);
+
+
 
 // questa fuonzione adda l'articolo se non fosse presente altrimenti lo elimina dall'arrey di destinazione
 function aggiungiOggettoSeNonPresente(nuovoOggetto) {
@@ -255,4 +257,6 @@ buttonToSave.addEventListener('click', function () {
 
 
     }
+    
+    
 });
