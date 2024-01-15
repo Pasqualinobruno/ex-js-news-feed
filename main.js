@@ -165,11 +165,6 @@ console.log(preferArticles);
 // questa fuonzione adda l'articolo se non fosse presente altrimenti lo elimina dall'arrey di destinazione
 function aggiungiOggettoSeNonPresente(nuovoOggetto) {
 
-    //type_article.forEach(typeText => {
-    //    if (!preferArticles.includes(typeText)) {
-    //        preferArticles.push(nuovoOggetto)
-    //    } 
-    //})
 
 
     // Verifica se l'oggetto non è presente nell'array 
@@ -200,7 +195,7 @@ document.getElementById('tags').addEventListener('change', function (e) {
     creatArticles(filterArticle, for_cards);
     //se la selezione risulta vuota comparire un mess
     if (filterArticle == 0) {
-        for_cards.innerHTML = '<h2 class="text-center text-light  align-items-center mt-2"><strong>Vuoto</h2>'
+        for_cards.innerHTML = '<h2 class="text-center text-light  align-items-center mt-2"><strong>Non sono presenti articoli di questo genere</h2>'
 
     }
 })
@@ -252,8 +247,9 @@ buttonToSave.addEventListener('click', function () {
             for_cards.insertAdjacentHTML('beforeend', article);
         });
     } else {
-        creatArticles(articles, for_cards)
-        
+        // stampa i nostri articoli
+        creatArticles(articles, for_cards);
+
 
 
     }
